@@ -985,6 +985,11 @@ main{
                 justify-content: center;
                 .SOTM-info{
                     width: 100%;
+                    height: fit-content;
+                    .content{
+                        width: 100%;
+                        margin: 0;
+                    }
                 }
                 .SOTM-img{
                     width: 100%;
@@ -1088,6 +1093,17 @@ main{
            flex-direction: column-reverse;
            .overlay{
                margin: 3rem 0;
+               .testimonials{
+                   .animator{
+                    .box{
+                        width: 100%;
+                        background-color: white;
+                        small{
+                            font-size: .6rem;
+                        }
+                    }
+                   }
+               }
            }
            .cust-content{
                margin: 3rem auto;
@@ -1096,10 +1112,21 @@ main{
                p{
                    width: 100%;
                }
+               .btn-black{
+                   padding: .8rem 1.8rem;
+                   font-size: .8rem;
+               }
                .getapp{
                    justify-content: center;
+                   align-items: center;
+                   flex-direction: column;
+                   .get-iphone{
+                       margin-bottom: 1.5rem;
+                       padding: .8rem 2rem;
+                   }
                }
            }
+           
        }
     }
 }
@@ -1138,17 +1165,113 @@ main{
         flex-direction: column;
         padding: 4rem;
         height: fit-content;
+        margin: 3rem 0;
         .features-title{
             width: 100%;
+            margin-top: 3rem;
+            h2{
+                font-size: 1.2rem;
+            }
         }
         .features-brand{
-            width: 85%;
+            width: 100%;
+        }
+        .features-brand > img{
             margin-top: 3rem;
         }
     }
     
 }
 
+ .footer-section{
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     grid-template-rows: 1fr;
+     padding: 3rem;
+ }
+  footer li{
+      list-style: none;
+  }
+  footer a{
+      color: black;
+      &:hover{
+          text-decoration: none;
+      }
+  }
+   .list-head{
+       font-weight: bold;
+   }
+  .products, .company, .legal, footer h3{
+      font-size: .8rem;
+      line-height: 2.5;
+  }
+  .contact > p{
+      font-size: .8rem;
+  }
+  .contact > div{
+      font-size: 1.8rem;
+  }
+  .contact{
+      text-align: right;
+  }
+  
+  footer{
+      text-align: center;
+  }
+  footer > p{
+    max-width: 700px;
+    margin: 2rem auto;
+    font-size: .8rem;
+  }
+  .foot-p{
+      color: rgb(92, 157, 255);
+      font-size: 1rem;
+  }
 
+  @media  (max-width: 992px)  {
+      .footer-section{
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 2rem;
+          padding: 2rem 1rem;
+          justify-content:  space-between;
+      }
+
+        footer ul{
+            padding-left: 0;
+        } 
+      .footer-logo{
+          width: 100%;
+          margin-bottom: 3rem;
+      }
+      .products{
+          width: 50%
+      }          
+      .company{
+         width: 50%;
+      }
+      .legal{
+          width: 50%;
+          margin-top: 3rem;
+      }
+      .contact{
+          width: 100%;
+          text-align: left;
+          margin-top:3rem;
+      }
+      
+  }
+  footer{
+      text-align: justify;
+      padding: 2rem;
+  }
+  .footer > p{
+      max-width: 400px;
+      padding: 1rem 2rem;
+  }
+  .foot-p{
+      text-align: center;
+  }
+ 
 
 }
