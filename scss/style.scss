@@ -1308,7 +1308,7 @@ body{
                 }
             }
             .sub-foot-p{
-                padding: 1rem 2rem;
+                padding: 1rem 0;
             }
             .foot-p{
                 text-align: center;
@@ -1317,8 +1317,8 @@ body{
     }
     @media (max-width: 480px) {
         footer{
-            padding: 2rem 0;
-            margin: 2rem;
+            padding: 1rem 0;
+            margin: 1.5rem;
         }
     }
     }
